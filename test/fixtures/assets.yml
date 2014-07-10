@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  service_tag: MyString
+  manufacturer: MyString
+  model: MyString
+  express_service_code: MyString
+  tag: MyString
+  purchase_date: 2014-07-10
+  purchase_entity: MyString
+
+two:
+  name: MyString
+  service_tag: MyString
+  manufacturer: MyString
+  model: MyString
+  express_service_code: MyString
+  tag: MyString
+  purchase_date: 2014-07-10
+  purchase_entity: MyString

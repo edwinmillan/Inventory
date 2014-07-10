@@ -1,0 +1,33 @@
+%h1 Listing assets
+
+%table
+  %tr
+    %th Name
+    %th Service tag
+    %th Manufacturer
+    %th Model
+    %th Express service code
+    %th Tag
+    %th Purchase date
+    %th Purchase entity
+    %th
+    %th
+    %th
+
+  - @assets.each do |asset|
+    %tr
+      %td= asset.name
+      %td= asset.service_tag
+      %td= asset.manufacturer
+      %td= asset.model
+      %td= asset.express_service_code
+      %td= asset.tag
+      %td= asset.purchase_date
+      %td= asset.purchase_entity
+      %td= link_to 'Show', asset
+      %td= link_to 'Edit', edit_asset_path(asset)
+      %td= link_to 'Destroy', asset, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Asset', new_asset_path

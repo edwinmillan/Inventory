@@ -1,0 +1,30 @@
+%p#notice= notice
+
+%p
+  %b Name:
+  = @asset.name
+%p
+  %b Service tag:
+  = @asset.service_tag
+%p
+  %b Manufacturer:
+  = @asset.manufacturer
+%p
+  %b Model:
+  = @asset.model
+%p
+  %b Express service code:
+  = @asset.express_service_code
+%p
+  %b Tag:
+  = @asset.tag
+%p
+  %b Purchase date:
+  = @asset.purchase_date
+%p
+  %b Purchase entity:
+  = @asset.purchase_entity
+
+= link_to 'Edit', edit_asset_path(@asset)
+\|
+= link_to 'Back', assets_path
